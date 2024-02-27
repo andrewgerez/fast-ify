@@ -6,8 +6,10 @@ app.get('/start', () => {
   return 'start :p'
 })
 
-app.listen({
-  port: 3333,
-}).then(() => {
-  console.log('HTTP server running! :)')
-})
+app
+  .listen({
+    port: 3333,
+  })
+  .then(() => {
+    console.log('HTTP server running! :)')
+  })

@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "prd": "npx tsc src/server.ts && node src/server.js"
+    "prd": "npx tsc src/server.ts && node src/server.js",
+    "lint": "eslint src --ext .ts --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^20.11.20",
+    "eslint": "^8.57.0",
     "tsx": "^4.7.1",
     "typescript": "^5.3.3"
   },
