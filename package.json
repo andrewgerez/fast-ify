@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "prd": "npx tsc src/server.ts && node src/server.js",
-    "lint": "eslint src --ext .ts --fix",
+    "lint": "eslint test --ext .ts --fix && eslint src --ext .ts --fix",
     "test": "vitest"
   },
   "keywords": [],
@@ -15,8 +15,10 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^20.11.20",
+    "@types/supertest": "^6.0.2",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
+    "supertest": "^6.3.4",
     "tsx": "^4.7.1",
     "typescript": "^5.3.3",
     "vitest": "^1.3.1"
