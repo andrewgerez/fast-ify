@@ -10,7 +10,7 @@
     "dev": "tsx watch src/server.ts",
     "prd": "npx tsc src/server.ts && node src/server.js",
     "lint": "eslint test --ext .ts --fix && eslint src --ext .ts --fix",
-    "build": "tsup src --out-dir",
+    "build": "tsup src --out-dir build",
     "test": "vitest"
   },
   "keywords": [],
