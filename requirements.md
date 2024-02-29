@@ -8,5 +8,5 @@
 # Business requirements
 
 - [x] The transaction can be like credit, which will add to the total amount, and debit, wich whill subtract;
-- [ ] It must be possible to identify the user in requests;
-- [ ] The user will only be able view transactions that he creates;
+- [x] It must be possible to identify the user in requests;
+- [x] The user will only be able view transactions that he creates;
