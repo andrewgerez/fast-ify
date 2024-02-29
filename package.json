@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "prd": "npx tsc src/server.ts && node src/server.js",
     "lint": "eslint test --ext .ts --fix && eslint src --ext .ts --fix",
-    "build": "tsup src --out-dir build",
+    "build": "tsup src --out-dir",
     "test": "vitest"
   },
   "keywords": [],
@@ -19,6 +22,7 @@
     "@types/supertest": "^6.0.2",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
+    "sqlite3": "^5.1.7",
     "supertest": "^6.3.4",
     "tsup": "^8.0.2",
     "tsx": "^4.7.1",
@@ -29,7 +33,7 @@
     "@fastify/cookie": "^9.3.1",
     "fastify": "^4.26.1",
     "knex": "^3.1.0",
-    "sqlite3": "^5.1.7",
+    "pg": "^8.11.3",
     "zod": "^3.22.4"
   }
 }
